@@ -31,6 +31,7 @@ export default function Login() {
   function loginUser(e) {
     e.preventDefault();
 
+    console.log("Ok")
     let URL = "";
 
     if (location.state.from === "owner") {
@@ -40,17 +41,19 @@ export default function Login() {
     }
 
     Axios.post(`${URL}`, { email: email, password: pass }).then((resp) => {
+
+      let data=resp.data.data
       if (resp.data.success) {
         if (location.state.from === "user") {
           navigate("/availableLots", {
             state: {
-              data: resp.data.data,
+              data: data,
             },
           });
         } else if (location.state.from === "owner") {
           navigate("/lotOwnerPage", {
             state: {
-              data: resp.data.data,
+              data: data,
             },
           });
         }

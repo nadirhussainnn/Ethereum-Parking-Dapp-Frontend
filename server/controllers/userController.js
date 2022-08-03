@@ -1,32 +1,37 @@
-const dotenv=require('dotenv')
-dotenv.config()
-
 const User=require('../models/userModel')
-const Owner=require('../models/ownerModel')
 
-const ParkingABI = require("./ABI.json");
-const CONTRACT_ADDRESS = process.env.CONTRACT_ADDRESS;
-const INFURANET_URL= process.env.INFURANET_URL;
-const web3 = new Web3(INFURANET_URL);
-
-const login=(req, res)=>{
+const login=async(req, res)=>{
 
     console.log(`Login API hit`)
     try{
         const {email, password}=req.body
 
+        const user=await User.findOne({email, password})
+
+        if(user){
+            res.status(200).send({success:true, msg:"Loggedin successfully", data:user})
+        }
+        else{
+            res.status(200).send({success:false, msg:"Could not find user"})
+        }
     }catch(error){
         res.status(400).send(error)
     }
 }
 
-const register=(req, res)=>{
+const register=async (req, res)=>{
 
     console.log(`Login API hit`)
     try{
         
-        const {email, password, publicAddress, privateAddress}=req.body
 
+        const user=await User.create({...req.body})
+        if(user){
+            res.status(200).send({success:true, msg:"Created successfully", data:user})
+        }
+        else{
+            res.status(200).send({success:false, msg:"Could not Create"})
+        }
     }catch(error){
         res.status(400).send(error)
     }

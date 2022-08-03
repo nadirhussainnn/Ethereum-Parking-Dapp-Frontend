@@ -6,7 +6,7 @@ import { Col, Row, Card, Button } from "react-bootstrap";
 import { INFURANET_URL, CONTRACT_ADDRESS } from "./constants";
 import { useLocation } from "react-router-dom";
 import { images } from "./images";
-import ParkingABI from "./contracts/Parking.json"
+import ParkingABI from "./contracts/Parking.json";
 
 import OwnerLotTemplate from "./OwnerLotTemplate";
 
@@ -93,7 +93,10 @@ export default function LotOwnerPage() {
           <Row>
             {availableLots ? (
               availableLots.map((lot, ind) => {
-                if (lot.lotOnwerAddress === location.state.data.public_address && lot.vacancy>0) {
+                if (
+                  lot.lotOnwerAddress === location.state.data.public_address &&
+                  lot.vacancy > 0
+                ) {
                   return (
                     <Col xs={12} md={{ span: 3, offset: 0 }}>
                       <OwnerLotTemplate

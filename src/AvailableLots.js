@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Web3 from "web3";
+
 import { Col, Row, Card } from "react-bootstrap";
 import { useLocation } from "react-router-dom";
 import { INFURANET_URL, CONTRACT_ADDRESS } from "./constants";
 import { images } from "./images";
+
 import ParkingABI from './contracts/Parking.json'
 import LotTemplate from "./LotTemplate";
 

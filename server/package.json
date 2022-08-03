@@ -14,12 +14,11 @@
     "dotenv": "^16.0.1",
     "ethereumjs-tx": "^2.1.2",
     "express": "^4.17.3",
-    "mongoose": "^6.4.6",
-    "mysql": "^2.18.1",
+    "mongoose": "^6.5.1",
     "nodemon": "^2.0.15",
     "web3": "^1.7.4"
   },
   "engines": {
-    "node": "v15.11.0" 
+    "node": "v15.11.0"
   }
 }
