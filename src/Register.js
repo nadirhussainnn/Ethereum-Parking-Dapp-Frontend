@@ -4,7 +4,6 @@ import { Col, Form, Row, Modal } from "react-bootstrap";
 
 import Axios from "axios";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
@@ -22,9 +21,6 @@ export default function Register() {
 
   const [accuntPublicAddress, setAccuntPublicAddress] = useState("");
   const [accuntPrivateAddress, setAccuntPrivateAddress] = useState("");
-
-  //useHistory API to route between pages/views
-  const navigate = useNavigate();
 
   //onChange listener for email
   function emailChanged(e) {
@@ -44,9 +40,9 @@ export default function Register() {
 
     //endpoint to register user
     let URL = "";
-    if (location.state.from == "owner") {
+    if (location.state.from === "owner") {
       URL = `http://localhost:${PORT}/api/registerOwner`;
-    } else if (location.state.from == "user") {
+    } else if (location.state.from === "user") {
       URL = `http://localhost:${PORT}/api/registerUser`;
     }
 

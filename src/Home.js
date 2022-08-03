@@ -11,7 +11,7 @@ export default function Home() {
 
       <Row>
         <Col xs={12} md={{ span: 5, offset: 1 }}>
-          <img src={homeImage} alt="Loading Image ... " width={"100%"} />
+          <img src={homeImage} alt="Loading ... " width={"100%"} />
         </Col>
         <Col xs={12} md={{ span: 6 }} className="mt-4">
           <div

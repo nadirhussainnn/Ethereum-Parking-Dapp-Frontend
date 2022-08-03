@@ -93,7 +93,7 @@ export default function LotOwnerPage() {
           <Row>
             {availableLots ? (
               availableLots.map((lot, ind) => {
-                if (lot.lotOnwerAddress == location.state.data.public_address && lot.vacancy>0) {
+                if (lot.lotOnwerAddress === location.state.data.public_address && lot.vacancy>0) {
                   return (
                     <Col xs={12} md={{ span: 3, offset: 0 }}>
                       <OwnerLotTemplate

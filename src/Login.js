@@ -33,21 +33,21 @@ export default function Login() {
 
     let URL = "";
 
-    if (location.state.from == "owner") {
+    if (location.state.from === "owner") {
       URL = `http://localhost:${PORT}/api/loginOwner`;
-    } else if (location.state.from == "user") {
+    } else if (location.state.from === "user") {
       URL = `http://localhost:${PORT}/api/loginUser`;
     }
 
     Axios.post(`${URL}`, { email: email, password: pass }).then((resp) => {
       if (resp.data.success) {
-        if (location.state.from == "user") {
+        if (location.state.from === "user") {
           navigate("/availableLots", {
             state: {
               data: resp.data.data,
             },
           });
-        } else if (location.state.from == "owner") {
+        } else if (location.state.from === "owner") {
           navigate("/lotOwnerPage", {
             state: {
               data: resp.data.data,

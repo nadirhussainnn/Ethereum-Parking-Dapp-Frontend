@@ -1,9 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { v4 as uuidv4 } from 'uuid';
 import {Row,Col, Form, Button} from "react-bootstrap"
 
-import Web3 from "web3";
-import { INFURANET_URL } from "./constants";
 import { useLocation } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 import Axios from "axios";
@@ -15,9 +13,6 @@ export default function CreateParkingLot() {
     const location = useLocation();
     const navigate = useNavigate();
 
-    console.log(location.state.owner);
-
-    const web3 = new Web3(INFURANET_URL);
     
     const[lotLocation, setLotLocation]=useState("");
     const[pricePervacancy, setPricePerVacancy]=useState("");
