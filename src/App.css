@@ -1,0 +1,21 @@
+.link{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    background-color: cadetblue;
+    padding: 10px;
+}
+
+.link:hover{
+    color: greenyellow;
+}
+
+.home-link{
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+}
+
+.home-link:hover{
+    color: gold;
+}
