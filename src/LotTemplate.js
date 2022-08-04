@@ -9,6 +9,7 @@ import { PORT } from "./constants";
 //import EthereumTx from "ethereumjs-tx";
 
 export default function LotTemplate(props) {
+
   const price = props.price;
   const vacancy = props.vacancy;
   const description = props.description;
@@ -47,7 +48,7 @@ export default function LotTemplate(props) {
               console.log("Booking tx Hash: "+bookingTransactionHash);
               //                  alert("You have booked lot successfully\nTransaction Hash is:\n"+resp.data.transactionHash)
 
-              URL=`http://localhost:${PORT}/api/updateVacancy`;
+              URL=`https://eth-parking.herokuapp.com/api/updateVacancy`;
 
               Axios.post(`${URL}`, {
                 senderPublicKey: lotUserPublicKey,
