@@ -19,25 +19,28 @@ This App is live at [Eth-Parking](https://eth-parking.netlify.app/)
 
 
 ## How to use app
-1. For Parking vehicle, you will click `Park A Vehicle`
+1. For Parking vehicle, you will click `Park A Vehicle` <br />
 `Create new account, get Ropsten addresses, get balance in that using Ropsten Faucets`
 
-2. For Creating Parking lot, you will click `Create a Parking lot`
+2. For Creating Parking lot, you will click `Create a Parking lot` <br />
 
 `Create new account, get Ropsten addresses, get balance in that address using Ropsten Faucets`
 
 <h1 style="margin-bottom:10px;">Outputs<h1>
 
-<h5>Owner Dashboard</h5>
+<h5 style="margin-bottom:10px;">Owner Dashboard</h5>
+
+![Owner Dashboard](https://res.cloudinary.com/nadirhussainnn/image/upload/v1659566395/Owner_Dashboard_jafdef.png)
 
 
+<h5 style="margin-bottom:10px;">Owner Dashboard - Create Lot</h5>
 
-Owner Dashboard - Create Lot
+![Create Lot](https://res.cloudinary.com/nadirhussainnn/image/upload/v1659566392/put_r0n132.png)
 
+<h5 style="margin-bottom:10px;">User/Driver Dashboard - Available lots before parking</h5>
 
-User (Driver) Dashboard - `Before` Parking
+![Available lots](https://res.cloudinary.com/nadirhussainnn/image/upload/v1659566394/before-parking_vkmio2.png)
 
+<h5 style="margin-bottom:10px;">User/Driver Dashboard - Available lots after parking</h5>
 
-User (Driver) Dashboard - `After` Parking
-
-
+![Available lots](https://res.cloudinary.com/nadirhussainnn/image/upload/v1659566395/after-parking_x2bx8u.png)
