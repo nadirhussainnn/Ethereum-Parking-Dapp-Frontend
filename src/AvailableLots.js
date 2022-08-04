@@ -49,9 +49,9 @@ export default function AvailableLots() {
             <Card.Body>
               <Card.Text>
                 <p>
-                  <b>Private Key: </b>
+                  {/* <b>Private Key: </b>
                   {location.state.data.private_address}
-                  <br />
+                  <br /> */}
                   <b>Public address: </b>
                   {location.state.data.public_address}
                   <br />
