@@ -5,7 +5,7 @@ import {Row,Col, Form, Button} from "react-bootstrap"
 import { useLocation } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 import Axios from "axios";
-import { PORT } from "./constants";
+
 
 
 export default function CreateParkingLot() {
@@ -45,7 +45,7 @@ export default function CreateParkingLot() {
 
       //Call API to add ParkingLot
 
-      const URL = `http://localhost:${PORT}/api/addParkingLot`;
+      const URL = `https://eth-parking.herokuapp.com/api/addParkingLot`;
 
       Axios.post(`${URL}`, { 
                 
