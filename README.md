@@ -39,7 +39,7 @@ This App is live at [Eth-Parking](https://eth-parking.netlify.app/)
 
 <h5 style="margin-bottom:10px;">User/Driver Dashboard - Available lots before parking</h5>
 
-![Available lots](https://res.cloudinary.com/nadirhussainnn/image/upload/v1659566394/before-parking_vkmio2.png)
+![Available lots](https://res.cloudinary.com/nadirhussainnn/image/upload/v1659575577/before-parking_cdw1dk.png)
 
 <h5 style="margin-bottom:10px;">User/Driver Dashboard - Available lots after parking</h5>
 
