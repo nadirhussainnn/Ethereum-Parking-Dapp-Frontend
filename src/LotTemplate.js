@@ -22,7 +22,7 @@ export default function LotTemplate(props) {
 
   const web3 = new Web3(INFURANET_URL);
 
-  let URL = `http://localhost:${PORT}/api/sendTransaction`;
+  let URL = `https://eth-parking.herokuapp.com/api/sendTransaction`;
 
   //TODO: UPDATE Vacancy on Blockchain after lot is booked
 

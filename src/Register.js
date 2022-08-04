@@ -41,9 +41,9 @@ export default function Register() {
     //endpoint to register user
     let URL = "";
     if (location.state.from === "owner") {
-      URL = `http://localhost:${PORT}/api/registerOwner`;
+      URL = `https://eth-parking.herokuapp.com/api/registerOwner`;
     } else if (location.state.from === "user") {
-      URL = `http://localhost:${PORT}/api/registerUser`;
+      URL = `https://eth-parking.herokuapp.com/api/registerUser`;
     }
 
     let account = web3.eth.accounts.create();

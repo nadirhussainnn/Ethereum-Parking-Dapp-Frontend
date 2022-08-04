@@ -35,9 +35,9 @@ export default function Login() {
     let URL = "";
 
     if (location.state.from === "owner") {
-      URL = `http://localhost:${PORT}/api/loginOwner`;
+      URL = `https://eth-parking.herokuapp.com/api/loginOwner`;
     } else if (location.state.from === "user") {
-      URL = `http://localhost:${PORT}/api/loginUser`;
+      URL = `https://eth-parking.herokuapp.com/api/loginUser`;
     }
 
     Axios.post(`${URL}`, { email: email, password: pass }).then((resp) => {
